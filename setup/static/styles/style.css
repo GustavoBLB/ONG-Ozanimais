@@ -300,12 +300,18 @@ height: 50px
 
 .form_pix{
   padding: 10px;
-  display: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap:20px;
   transition: opacity 0.3s ease, display 0s ease 0.3s;
 
+}
+
+.div_nada{
+  align-items: center;
+  display: flex;
 }
 
 .form_pix_titulo{

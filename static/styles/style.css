@@ -300,7 +300,7 @@ height: 50px
 
 .form_pix{
   padding: 10px;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap:20px;
