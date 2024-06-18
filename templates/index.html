@@ -78,7 +78,7 @@
           <h2>Pagina de Doação </h2>
         </section>
     
-        <form id="form" class="form" method="post" action="{% url 'home' %}" >
+        <form id="form" class="form" method="POST" action="{% url 'home' %}" >
           {% csrf_token %}
           <div class="form-content">
             <label for="nome">Nome</label>
@@ -104,7 +104,7 @@
             <label for="telefone">Telefone</label>
             <input
               name="telefone"
-              type="text"
+              type="telefone"
               id="telefone"
               placeholder="Digite o seu telefone..."
             />
@@ -115,7 +115,7 @@
             <span class = "form_pix_texto" >42.475.570/0001-88</span>
           </div>
     
-          <button class = "enviar-mostrar" type="submit">Enviar</button>
+          <button type="submit">Enviar</button>
           
         </form>
 

@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from .models import Cadastro
 
-def indexView(request):
+def CadastroView(request):
     if request.method == 'GET':
         cadastro_form = Cadastro.objects.all()
         return render(request, 'index.html',{'cadastro':cadastro_form})
@@ -21,6 +21,7 @@ def indexView(request):
         pessoas.save()
         
         return render(request,'index.html')
+        
 
 
 def index(request):

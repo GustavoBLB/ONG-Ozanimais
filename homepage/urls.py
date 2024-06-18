@@ -1,8 +1,8 @@
 from django.urls import path
 from . import views
-from homepage.views import index,cachorros
+from homepage.views import cachorros
 
 urlpatterns = [
-    path('', views.indexView, name = 'home'),
+    path('', views.CadastroView, name = 'home'),
     path('cachorros/',cachorros, name='cachorros')
 ]
